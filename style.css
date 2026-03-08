@@ -1,0 +1,76 @@
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#020617;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:100px 10%;
+}
+
+.hero img{
+width:250px;
+border-radius:50%;
+}
+
+h1{
+font-size:50px;
+}
+
+h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+section{
+padding:80px 10%;
+}
+
+.skills{
+display:flex;
+gap:40px;
+font-size:50px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#38bdf8;
+padding:10px 20px;
+border-radius:5px;
+text-decoration:none;
+color:black;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
