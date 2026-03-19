@@ -2,121 +2,156 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sandeep Kumar | SRE & DevOps Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandeep Kumar | SRE & DevOps</title>
 
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 
-<body>
+<body class="bg-slate-950 text-white">
 
-<!-- NAVBAR -->
-<nav>
-  <h2>Sandeep Kumar</h2>
-  <div>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
+<header class="fixed w-full bg-slate-900/70 backdrop-blur z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-xl">Sandeep</h1>
+    <nav class="hidden md:flex space-x-6 text-sm">
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#skills" class="hover:text-blue-400">Skills</a>
+      <a href="#experience" class="hover:text-blue-400">Experience</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </nav>
   </div>
-</nav>
+</header>
 
-<!-- HERO -->
-<section class="hero">
-  <img src="assets/images/profile.jpeg" alt="profile">
-  <h1>Sandeep Kumar</h1>
-  <h3>Senior Site Reliability & DevOps Engineer</h3>
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+  <img src="assets/images/profile.jpeg" class="w-44 h-44 rounded-full border-4 border-blue-500 shadow-xl mb-6 hover:scale-105 transition" />
 
-  <div class="buttons">
-    <a href="assets/files/Latest_sandeep_resume.pdf" target="_blank">Download Resume</a>
-    <a href="assets/files/Hands-on AI certificate.pdf" target="_blank">AI Certificate</a>
-  </div>
-</section>
+  <h1 class="text-4xl md:text-6xl font-bold">Sandeep Kumar</h1>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Senior Site Reliability & DevOps Engineer with 10+ years of experience
-    designing, scaling, and operating Kubernetes-based cloud platforms on AWS.
-    Specialized in SLO/SLI engineering, observability, CI/CD, and automation.
+  <p class="text-blue-400 mt-4 text-lg">
+    Senior Site Reliability Engineer | DevOps | Kubernetes | AWS
   </p>
 
-  <p>
-    Proven track record of reducing incidents by 75% and improving reliability
-    through AI-assisted operations and platform engineering.
+  <p class="mt-2 text-gray-400">Bangalore, India</p>
+
+  <div class="mt-6 flex flex-wrap justify-center gap-4">
+    <a href="assets/files/Latest_sandeep_resume.pdf" target="_blank"
+      class="bg-blue-600 px-6 py-3 rounded-xl shadow hover:scale-105 transition">
+      Resume
+    </a>
+
+    <a href="assets/files/Hands-on AI certificate.pdf" target="_blank"
+      class="border border-blue-500 px-6 py-3 rounded-xl hover:bg-blue-500 transition">
+      Certificate
+    </a>
+
+    <a href="https://www.linkedin.com/in/sandeep-kumar-a0577b79/" target="_blank"
+      class="bg-slate-800 px-6 py-3 rounded-xl hover:bg-slate-700 transition">
+      LinkedIn
+    </a>
+  </div>
+</section>
+
+<section id="about" class="max-w-6xl mx-auto py-20 px-4">
+  <h2 class="text-3xl font-bold mb-6">About Me</h2>
+
+  <p class="text-gray-300 leading-relaxed max-w-3xl">
+    Senior Site Reliability & DevOps Engineer with 10+ years of experience designing,
+    scaling, and operating Kubernetes-based platforms on AWS. Strong expertise in
+    observability, CI/CD modernization, and automation.
   </p>
-</section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Tech Stack</h2>
+  <div class="grid md:grid-cols-4 gap-6 mt-12">
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
+      <h3 class="text-xl font-semibold">75%</h3>
+      <p class="text-gray-400">Incident Reduction</p>
+    </div>
 
-  <div class="skills">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/helm/helm-original.svg" />
-    <i class="devicon-terraform-plain-wordmark colored"></i>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original-wordmark.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original-wordmark.svg" />
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
+      <h3 class="text-xl font-semibold">80%</h3>
+      <p class="text-gray-400">Alert Noise Reduced</p>
+    </div>
+
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
+      <h3 class="text-xl font-semibold">10+</h3>
+      <p class="text-gray-400">Years Experience</p>
+    </div>
+
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
+      <h3 class="text-xl font-semibold">10+</h3>
+      <p class="text-gray-400">K8s Clusters</p>
+    </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <h2>Experience</h2>
+<section id="skills" class="bg-slate-900 py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-10">Tech Stack</h2>
 
-  <div class="card">
-    <h3>Senior Site Reliability Engineer — Mimecast</h3>
-    <p>Aug 2023 – Present</p>
-    <ul>
-      <li>Managed 10+ production EKS clusters</li>
-      <li>Reduced incidents significantly using SRE practices</li>
-      <li>Built observability stack (Prometheus, Grafana, ELK)</li>
-    </ul>
-  </div>
+    <div class="grid grid-cols-3 md:grid-cols-5 gap-10 items-center">
 
-  <div class="card">
-    <h3>Senior DevOps Engineer — Siemens Gamesa</h3>
-    <p>May 2021 – Aug 2023</p>
-    <ul>
-      <li>Built Kubernetes platform from scratch</li>
-      <li>Onboarded 20+ applications</li>
-      <li>Implemented CI/CD pipelines using GitLab</li>
-    </ul>
-  </div>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" class="h-16 mx-auto hover:scale-110 transition"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" class="h-16 mx-auto hover:scale-110 transition"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" class="h-16 mx-auto hover:scale-110 transition"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" class="h-16 mx-auto hover:scale-110 transition"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="h-16 mx-auto hover:scale-110 transition"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" class="h-16 mx-auto hover:scale-110 transition"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/helm/helm-original.svg" class="h-16 mx-auto hover:scale-110 transition"/>
+      <i class="devicon-terraform-plain-wordmark colored text-5xl"></i>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original-wordmark.svg" class="h-16 mx-auto hover:scale-110 transition"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original-wordmark.svg" class="h-16 mx-auto hover:scale-110 transition"/>
 
-  <div class="card">
-    <h3>Senior DevOps Engineer — Wipro</h3>
-    <p>Oct 2018 – Dec 2020</p>
-    <ul>
-      <li>Standardized CI/CD for 400+ microservices</li>
-      <li>Led microservices migration</li>
-    </ul>
+    </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
+<section id="experience" class="max-w-5xl mx-auto py-20 px-4">
+  <h2 class="text-3xl font-bold mb-10">Experience</h2>
 
-  <p>Email: sandeep.1991d@gmail.com</p>
+  <div class="border-l-2 border-blue-500 pl-6 space-y-10">
 
-  <a href="https://www.linkedin.com/in/sandeep-kumar-a0577b79/" target="_blank">
-    LinkedIn Profile
-  </a>
+    <div>
+      <h3 class="text-xl font-semibold">Mimecast - Senior SRE</h3>
+      <p class="text-gray-400">2023 - Present</p>
+      <p class="text-gray-300 mt-2">Managed EKS clusters, implemented SLO/SLI, reduced incidents drastically.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold">Siemens Gamesa - DevOps</h3>
+      <p class="text-gray-400">2021 - 2023</p>
+      <p class="text-gray-300 mt-2">Built Kubernetes platform, CI/CD pipelines, onboarding apps.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold">Wipro - DevOps</h3>
+      <p class="text-gray-400">2018 - 2020</p>
+      <p class="text-gray-300 mt-2">Handled microservices CI/CD and cloud migration.</p>
+    </div>
+
+  </div>
 </section>
 
-<footer>
-  <p>© 2026 Sandeep Kumar</p>
+<section id="contact" class="bg-slate-900 py-20">
+  <div class="max-w-4xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold mb-6">Contact</h2>
+
+    <p class="text-gray-300">Email: sandeep.1991d@gmail.com</p>
+    <p class="text-gray-300">Mobile: +91 9884873755</p>
+
+    <a href="https://www.linkedin.com/in/sandeep-kumar-a0577b79/" target="_blank"
+      class="inline-block mt-6 bg-blue-600 px-6 py-3 rounded-xl hover:scale-105 transition">
+      Connect on LinkedIn
+    </a>
+  </div>
+</section>
+
+<footer class="text-center p-6 bg-slate-950 text-gray-500">
+  © 2026 Sandeep Kumar | Built with DevOps mindset
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
