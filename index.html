@@ -36,7 +36,7 @@
   <h1 class="text-4xl md:text-6xl font-bold">Sandeep Kumar</h1>
 
   <p class="text-blue-400 mt-4 text-lg">
-    Senior Site Reliability Engineer | DevOps | Kubernetes | AWS
+    <span id="typing"></span>
   </p>
 
   <p class="mt-2 text-gray-400">Bangalore, India</p>
@@ -59,6 +59,37 @@
     </a>
   </div>
 </section>
+
+<!-- HERO TYPING ANIMATION SCRIPT -->
+<script>
+const roles = ["SRE Engineer","Kubernetes Expert","DevOps Leader","Cloud Platform Engineer"];
+let i = 0, j = 0, current = "", isDeleting = false;
+
+function typeEffect() {
+  const el = document.getElementById("typing");
+  if (!el) return;
+
+  if (i < roles.length) {
+    if (!isDeleting && j <= roles[i].length) {
+      current = roles[i].substring(0, j++);
+    } else if (isDeleting && j >= 0) {
+      current = roles[i].substring(0, j--);
+    }
+
+    el.innerHTML = current;
+
+    if (j === roles[i].length) isDeleting = true;
+    if (j === 0 && isDeleting) {
+      isDeleting = false;
+      i = (i + 1) % roles.length;
+    }
+  }
+
+  setTimeout(typeEffect, isDeleting ? 60 : 100);
+}
+
+window.onload = typeEffect;
+</script>
 
 <!-- ABOUT -->
 <section id="about" class="max-w-6xl mx-auto py-20 px-4">
@@ -115,6 +146,34 @@
   </div>
 </section>
 
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="bg-slate-900 py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-10">Certifications</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-slate-800 p-6 rounded-2xl shadow hover:scale-105 transition">
+        <h3 class="text-xl font-semibold">AI Masterclass III</h3>
+        <p class="text-gray-400 mt-2">Advanced AI, prompting, and agent workflows.</p>
+        <a href="assets/files/Hands-on AI Masterclass III_ Mastery (you.com) certificate.pdf" target="_blank"
+           class="inline-block mt-4 text-blue-400 hover:underline">View Certificate</a>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-2xl shadow hover:scale-105 transition">
+        <h3 class="text-xl font-semibold">Employee of the Quarter</h3>
+        <p class="text-gray-400 mt-2">Mimecast (2025)</p>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-2xl shadow hover:scale-105 transition">
+        <h3 class="text-xl font-semibold">Automation Champion</h3>
+        <p class="text-gray-400 mt-2">Wipro (2019)</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- PROJECTS -->
 <section id="projects" class="max-w-6xl mx-auto py-20 px-4">
   <h2 class="text-3xl font-bold mb-10">Projects</h2>
@@ -150,6 +209,32 @@
       <p class="text-gray-400">2023 - Present</p>
       <p class="text-gray-300 mt-2">Managed EKS clusters, implemented SLO/SLI, reduced incidents drastically.</p>
     </div>
+
+    <div>
+      <h3 class="text-xl font-semibold">Siemens Gamesa - DevOps</h3>
+      <p class="text-gray-400">2021 - 2023</p>
+      <p class="text-gray-300 mt-2">Built Kubernetes platform, CI/CD pipelines, onboarding apps.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold">JLL Technologies - DevOps</h3>
+      <p class="text-gray-400">2020 - 2021</p>
+      <p class="text-gray-300 mt-2">Built CI/CD pipelines using Azure DevOps and deployed containerized applications on Kubernetes.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold">Wipro - DevOps</h3>
+      <p class="text-gray-400">2018 - 2020</p>
+      <p class="text-gray-300 mt-2">Handled microservices CI/CD and cloud migration at scale.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold">Ford Motors - Software Engineer</h3>
+      <p class="text-gray-400">2015 - 2018</p>
+      <p class="text-gray-300 mt-2">Built Jenkins pipelines, implemented CI/CD practices and supported early cloud-native deployments.</p>
+    </div>
+
+  </div>
 
     <div>
       <h3 class="text-xl font-semibold">Siemens Gamesa - DevOps</h3>
