@@ -16,24 +16,23 @@
 <body class="bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white">
 
 <!-- NAV -->
-<header class="fixed w-full bg-slate-900/70 backdrop-blur z-50 border-b border-slate-800">
+<header class="fixed w-full bg-slate-900/60 backdrop-blur z-50 border-b border-slate-800">
   <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
     <h1 class="font-bold text-xl">Sandeep</h1>
     <nav class="hidden md:flex space-x-6 text-sm">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#certifications">Awards</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#skills" class="hover:text-blue-400">Skills</a>
+      <a href="#projects" class="hover:text-blue-400">Projects</a>
+      <a href="#experience" class="hover:text-blue-400">Experience</a>
+      <a href="#certifications" class="hover:text-blue-400">Awards</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
     </nav>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
-  <img src="assets/images/profile.jpeg"
-       class="w-40 h-40 rounded-full border-4 border-blue-500 shadow-xl mb-6"/>
+  <img src="assets/images/profile.jpeg" class="w-44 h-44 rounded-full border-4 border-blue-500 shadow-xl mb-6" />
 
   <h1 class="text-4xl md:text-6xl font-bold">Sandeep Kumar</h1>
 
@@ -43,21 +42,20 @@
 
   <p class="mt-2 text-gray-400">Bangalore, India</p>
 
-  <div class="mt-6 flex flex-wrap gap-4 justify-center">
+  <div class="mt-6 flex flex-wrap justify-center gap-4">
     <a href="assets/files/Latest_sandeep_resume.pdf" target="_blank"
-       class="bg-blue-600 px-6 py-3 rounded-xl hover:scale-105 transition">
-       Resume
+      class="bg-blue-600 px-6 py-3 rounded-xl shadow hover:scale-105 transition">
+      Resume
     </a>
 
-    <a href="assets/files/Hands-on AI Masterclass III_ Mastery (you.com) certificate.pdf"
-       target="_blank"
-       class="border border-blue-500 px-6 py-3 rounded-xl hover:bg-blue-500 transition">
-       Certificate
+    <a href="assets/files/Hands-on AI Masterclass III_ Mastery (you.com) certificate.pdf" target="_blank"
+      class="border border-blue-500 px-6 py-3 rounded-xl hover:bg-blue-500 transition">
+      Certificate
     </a>
 
     <a href="https://www.linkedin.com/in/sandeep-kumar-a0577b79/" target="_blank"
-       class="bg-slate-800 px-6 py-3 rounded-xl hover:bg-slate-700 transition">
-       LinkedIn
+      class="bg-slate-800 px-6 py-3 rounded-xl hover:bg-slate-700 transition">
+      LinkedIn
     </a>
   </div>
 </section>
@@ -66,11 +64,33 @@
 <section id="about" class="max-w-6xl mx-auto py-10 px-4">
   <h2 class="text-3xl font-bold mb-6">About Me</h2>
 
-  <p class="text-gray-300 max-w-3xl">
-    Senior Site Reliability & DevOps Engineer with 10+ years of experience
-    designing, scaling, and operating Kubernetes platforms on AWS.
-    Expert in SLO/SLI, observability, and automation.
+  <p class="text-gray-300 leading-relaxed max-w-3xl">
+    Senior Site Reliability & DevOps Engineer with 10+ years of experience designing,
+    scaling, and operating Kubernetes-based platforms on AWS. Strong expertise in
+    observability, CI/CD modernization, and automation.
   </p>
+
+  <div class="grid md:grid-cols-4 gap-6 mt-12">
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
+      <h3 class="text-xl font-semibold">75%</h3>
+      <p class="text-gray-400">Incident Reduction</p>
+    </div>
+
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
+      <h3 class="text-xl font-semibold">80%</h3>
+      <p class="text-gray-400">Alert Noise Reduced</p>
+    </div>
+
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
+      <h3 class="text-xl font-semibold">10+</h3>
+      <p class="text-gray-400">Years Experience</p>
+    </div>
+
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
+      <h3 class="text-xl font-semibold">10+</h3>
+      <p class="text-gray-400">K8s Clusters</p>
+    </div>
+  </div>
 </section>
 
 <!-- SKILLS -->
@@ -78,19 +98,17 @@
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-3xl font-bold mb-10">Tech Stack</h2>
 
-    <div class="grid grid-cols-3 md:grid-cols-5 gap-10">
-
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/helm/helm-original.svg"/>
+    <div class="grid grid-cols-3 md:grid-cols-5 gap-10 items-center">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" class="h-16 mx-auto"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" class="h-16 mx-auto"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" class="h-16 mx-auto"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" class="h-16 mx-auto"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="h-16 mx-auto"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" class="h-16 mx-auto"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/helm/helm-original.svg" class="h-16 mx-auto"/>
       <i class="devicon-terraform-plain-wordmark colored text-5xl"></i>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original-wordmark.svg"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original-wordmark.svg"/>
-
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original-wordmark.svg" class="h-16 mx-auto"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original-wordmark.svg" class="h-16 mx-auto"/>
     </div>
   </div>
 </section>
@@ -101,58 +119,52 @@
 
   <div class="grid md:grid-cols-3 gap-8">
 
-    <div class="bg-slate-900 p-6 rounded-xl">
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
       <h3 class="text-xl font-semibold">Kubernetes Platform</h3>
-      <p class="text-gray-400 mt-2">
-        Multi-cluster EKS platform with autoscaling and high availability.
-      </p>
+      <p class="text-gray-400 mt-2">Built scalable multi-cluster EKS platform with autoscaling and observability.</p>
     </div>
 
-    <div class="bg-slate-900 p-6 rounded-xl">
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
       <h3 class="text-xl font-semibold">CI/CD Automation</h3>
-      <p class="text-gray-400 mt-2">
-        GitLab & Jenkins pipelines improving deployment efficiency.
-      </p>
+      <p class="text-gray-400 mt-2">Designed GitLab & Jenkins pipelines reducing deployment failures.</p>
     </div>
 
-    <div class="bg-slate-900 p-6 rounded-xl">
+    <div class="bg-slate-900 p-6 rounded-2xl shadow hover:scale-105 transition">
       <h3 class="text-xl font-semibold">Observability Stack</h3>
-      <p class="text-gray-400 mt-2">
-        Prometheus, Grafana, ELK for monitoring & alerting.
-      </p>
+      <p class="text-gray-400 mt-2">Implemented Prometheus, Grafana & ELK for monitoring.</p>
     </div>
 
   </div>
 </section>
 
-<!-- EXPERIENCE (CLEAN — NO DUPLICATES) -->
+<!-- EXPERIENCE (FIXED NO DUPLICATE) -->
 <section id="experience" class="max-w-5xl mx-auto py-20 px-4">
   <h2 class="text-3xl font-bold mb-10">Experience</h2>
 
-  <div class="border-l-2 border-blue-500 pl-6 space-y-8">
+  <div class="border-l-2 border-blue-500 pl-6 space-y-10">
 
     <div>
-      <h3 class="font-semibold">Mimecast - Senior SRE</h3>
+      <h3 class="text-xl font-semibold">Mimecast - Senior SRE</h3>
       <p class="text-gray-400">2023 - Present</p>
     </div>
 
     <div>
-      <h3 class="font-semibold">Siemens Gamesa - DevOps</h3>
+      <h3 class="text-xl font-semibold">Siemens Gamesa - DevOps</h3>
       <p class="text-gray-400">2021 - 2023</p>
     </div>
 
     <div>
-      <h3 class="font-semibold">JLL Technologies - DevOps</h3>
+      <h3 class="text-xl font-semibold">JLL Technologies - DevOps</h3>
       <p class="text-gray-400">2020 - 2021</p>
     </div>
 
     <div>
-      <h3 class="font-semibold">Wipro - DevOps</h3>
+      <h3 class="text-xl font-semibold">Wipro - DevOps</h3>
       <p class="text-gray-400">2018 - 2020</p>
     </div>
 
     <div>
-      <h3 class="font-semibold">Ford Motors - Software Engineer</h3>
+      <h3 class="text-xl font-semibold">Ford Motors - Software Engineer</h3>
       <p class="text-gray-400">2015 - 2018</p>
     </div>
 
@@ -160,32 +172,35 @@
 </section>
 
 <!-- CERTIFICATIONS -->
-<section id="certifications" class="max-w-5xl mx-auto py-20 px-4">
-  <h2 class="text-3xl font-bold mb-10">Certifications & Awards</h2>
+<section id="certifications" class="bg-slate-900 py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-10">Certifications & Awards</h2>
 
-  <div class="border-l-2 border-blue-500 pl-6 space-y-8">
+    <div class="grid md:grid-cols-3 gap-8">
 
-    <div>
-      <h3>AI Masterclass III</h3>
-      <a href="assets/files/Hands-on AI Masterclass III_ Mastery (you.com) certificate.pdf"
-         class="text-blue-400">View Certificate</a>
+      <div class="bg-slate-800 p-6 rounded-2xl shadow hover:scale-105 transition">
+        <h3 class="text-xl font-semibold">AI Masterclass III - Mastery</h3>
+        <p class="text-gray-400 mt-2">Advanced AI, prompting, and automation workflows.</p>
+        <a href="assets/files/Hands-on AI Masterclass III_ Mastery (you.com) certificate.pdf" target="_blank"
+           class="inline-block mt-4 text-blue-400 hover:underline">View Certificate</a>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-2xl shadow hover:scale-105 transition">
+        <h3 class="text-xl font-semibold">Employee of the Quarter</h3>
+        <p class="text-gray-400 mt-2">Mimecast | 2025</p>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-2xl shadow hover:scale-105 transition">
+        <h3 class="text-xl font-semibold">Automation Champion</h3>
+        <p class="text-gray-400 mt-2">Wipro | 2019</p>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-2xl shadow hover:scale-105 transition">
+        <h3 class="text-xl font-semibold">Asia Pacific Excellence Award</h3>
+        <p class="text-gray-400 mt-2">Ford | 2018</p>
+      </div>
+
     </div>
-
-    <div>
-      <h3>Employee of the Quarter</h3>
-      <p class="text-gray-400">Mimecast (2025)</p>
-    </div>
-
-    <div>
-      <h3>Automation Champion</h3>
-      <p class="text-gray-400">Wipro (2019)</p>
-    </div>
-
-    <div>
-      <h3>Asia Pacific Excellence Award</h3>
-      <p class="text-gray-400">Ford (2018)</p>
-    </div>
-
   </div>
 </section>
 
